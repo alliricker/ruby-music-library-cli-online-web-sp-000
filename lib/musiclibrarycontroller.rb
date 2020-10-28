@@ -19,7 +19,6 @@ class MusicLibraryController
     if input != 'exit'
       call
     end
-  end
 
   case input
   when 'list songs'
@@ -29,6 +28,7 @@ class MusicLibraryController
   when 'list genres'
     list_genre
   end
+end
 
     def list_songs
       Song.all.sort_by(&:name).each.with_index(1) do |song, index|
