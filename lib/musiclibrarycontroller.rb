@@ -21,6 +21,15 @@ class MusicLibraryController
     end
   end
 
+  case input
+  when 'list songs'
+    list_songs
+  when 'list artists'
+    list_artists 
+  when 'list genres'
+    list_genre
+  end
+
     def list_songs
       Song.all.sort_by(&:name).each.with_index(1) do |song, index|
         puts "#{index}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
