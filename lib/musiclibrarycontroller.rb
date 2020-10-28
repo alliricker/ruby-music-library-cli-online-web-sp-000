@@ -20,7 +20,7 @@ class MusicLibraryController
     if input != 'exit'
       call
     end
-    
+
     case input
       when 'list songs'
         list_songs
