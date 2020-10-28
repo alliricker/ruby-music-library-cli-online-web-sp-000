@@ -69,4 +69,4 @@ class MusicLibraryController
     end
 end
 
-MusicLibraryController.list_songs(John)
+MusicLibraryController.list_songs("John")
